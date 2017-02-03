@@ -9,4 +9,4 @@ services:
             - ./example/images:/opt/presentation/images
             - ./example/slides:/opt/presentation/slides
         command:
-            "grunt serve"
+            "/start.sh"
