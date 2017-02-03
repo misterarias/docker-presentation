@@ -52,10 +52,10 @@ document.getElementById("reveal").appendChild(el.cloneNode(true));
 
       // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
   Reveal.initialize({
-    controls: reveal_controls || true,
-    progress: reveal_progress || true,
-    history: reveal_history || true,
-    center: reveal_center || true,
+    controls: reveal_opts['controls'] || true,
+    progress: reveal_opts['progress'] || true,
+    history:  reveal_opts['history'] || true,
+    center:   reveal_opts['center'] || true,
 
     theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
     transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
